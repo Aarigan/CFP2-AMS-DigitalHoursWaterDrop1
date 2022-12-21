@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Rubik+Distressed&display=swap');
 
+:root {
+  --clr-color: rgb(100, 176, 169);
+} 
+
 *,
-::before,
-::after {
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -31,7 +35,7 @@ body {
   height: 150px;
   border-radius: 50%;
   font-size: 1.5em;
-  color: rgb(100, 176, 169);
+  color: var(--clr-color);
   text-shadow: -2px -2px 5px #fff;
   filter: drop-shadow(4px 4px 10px #fff);
   box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.05),
@@ -71,14 +75,14 @@ span {
 .colon {
   display: flex;
   align-items: center;
-  color: rgb(100, 176, 169);
+  color: var(--clr-color);
 }
 
 .drop-ampm {
   font-size: 0.8em;
   width: 100px;
   height: 100px;
-  color: rgb(100, 176, 169);
+  color: var(--clr-color);
 }
 
 /* TODO: responsive */
